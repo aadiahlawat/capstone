@@ -1,20 +1,133 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--darkest-color);
   font-size: var(--body-font-size-xs);
+  float: left;
+  width: 100%;
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1160px;
   padding: 40px 24px 24px;
 }
 
 footer .footer p {
   margin: 0;
+  color: #fff;
+  font-size: var(--body-font-size-xs);
+}
+footer .footer a {
+  text-decoration: underline;
+  color: #fff;
+}
+footer .footer-top-bar 
+{
+  margin-bottom:50px;
+}
+footer .footer-top-bar .default-content-wrapper
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+footer .footer-top-bar .default-content-wrapper ul
+{
+  display: flex;
+  list-style: none;
+  gap:20px;
+}
+footer .footer-top-bar .default-content-wrapper ul li a
+{
+  text-decoration: none;
+}
+footer .footer-top-bar .default-content-wrapper ul li a:hover
+{
+  text-decoration: underline;
+}
+footer .footer-top-bar .default-content-wrapper .icon-wknd-logo-light
+{
+  width:128px !important;
+  height: 48px !important;
 }
 
+footer .footer-top-bar .default-content-wrapper p:last-child
+{
+    display: flex;
+    padding: 8px 0 0 0;
+    justify-content: space-around;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child a img
+{
+  display: none;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child .icon
+{
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: wknd-icon-font!important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--darkest-color);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child a
+{
+  padding: 10px 10px 5px 10px;
+  background-color: #ebebeb;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child .icon.icon-facebook:before
+{
+  content: "";
+}
+footer .footer-top-bar .default-content-wrapper p:last-child .icon.icon-twitter:before
+{
+  content: "";
+}
+footer .footer-top-bar .default-content-wrapper p:last-child .icon.icon-instagram:before
+{
+  content: "";
+}
+footer .footer-top-bar .active-page a
+{
+  text-decoration: underline !important;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child 
+{
+  display: flex;
+    align-items: center;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child strong
+{
+  margin-right: 15px;
+}
+footer .section:not(.footer-top-bar)
+{
+  margin-bottom: 15px;
+}
+footer .footer-top-bar .button-container a
+{
+  background: transparent;
+}
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 40px 14px 24px;
+  }
+}
+@media (width<=768px)
+{
+  footer .footer-top-bar .default-content-wrapper
+  {
+    flex-direction: column;
+  }
+  footer .footer-top-bar .default-content-wrapper ul 
+  {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /contributors
+Disallow: /guides
+Disallow: /nav
+Disallow: /footer

@@ -1,0 +1,103 @@
+.our-contributors .contributors-wrapper
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-contributors  .contributors div p:last-child
+{
+  background-color: #202020;
+    width: 50%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    width: 150px;
+    padding: 8px 0 0 0;
+    justify-content: space-around;
+}
+.our-contributors  .contributors div p:last-child a img
+{
+  display: none;
+}
+.our-contributors  .contributors div p .icon
+{
+  speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: wknd-icon-font!important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--textColorInverse);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+.our-contributors  .contributors div p .icon.icon-facebook:before
+{
+  content: "";
+}
+.our-contributors  .contributors div p .icon.icon-twitter:before
+{
+  content: "";
+}
+.our-contributors  .contributors div p .icon.icon-instagram:before
+{
+  content: "";
+}
+.our-contributors .contributors
+{
+    display: flex;
+    gap:24px;
+    justify-content: space-between;
+  text-align: center;
+  border: none;
+}
+.our-contributors .contributors picture img
+{
+  border-radius: 50%;
+    height: 164px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 164px;
+}
+.our-contributors h2:after
+{
+  border-bottom: 2px solid var(--brandPrimary,#ffea00);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+.our-contributors h2
+ {
+  margin-bottom: 30px;
+}
+.our-contributors .default-content-wrapper p
+{
+  font-size: var(--body-font-size-xs);
+  color: var(--dim-color);
+}
+.our-contributors .contributors div h4
+{
+  font-size: var(--body-font-size-xs);
+  color: var(--darkest-color);
+  font-family: var(--body-font-family);
+  font-weight: var(--fontWeightBold);
+  text-transform: var(--transformUppercase);
+}
+.our-contributors .contributors .icon
+{
+  speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: wknd-icon-font !important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+.our-contributors .contributors .icon.icon-facebook:before
+{
+  content: "";
+}
