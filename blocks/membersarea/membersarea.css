@@ -1,0 +1,55 @@
+
+.membersarea.block  ul
+{    
+  opacity: 0.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr)) !important;
+}
+.membersarea.block > ul > li:before
+{
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-gradient(linear,right bottom,left top,from(hsla(0,0%,100%,0)),color-stop(50%,hsla(0,0%,100%,0)),color-stop(50%,var(--brandPrimary,#ffea00)),to(var(--brandPrimary)));
+  background: linear-gradient(to top left,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 50%,var(--brandPrimary,) 50%,var(--brandPrimary) 100%);
+  color: #000;
+  content: "";
+  font-family: wknd-icon-font !important;
+  font-size: 1.25rem;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9pt;
+  position: relative;
+  text-transform: none;
+  top: 49px;
+  z-index: 2;
+}
+.membersarea.block h2
+{
+  font-size: var(--body-font-size-m);
+  font-weight: bold;
+}
+.membersarea.block p
+{
+  font-size: var(--body-font-size-xs);
+}
+.membersarea.block ul li
+{
+  border: none !important;
+}
+.membersarea.block .cards-card-image 
+{
+  height: 200px;
+}
+.membersarea.block .cards-card-image img
+{
+  height: 200px;
+}
