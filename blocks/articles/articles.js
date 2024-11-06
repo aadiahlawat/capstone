@@ -15,7 +15,7 @@ const fetchArticles = async (path,articlesPerPage,currentPage) => {
         return { data: [], total: 0 };
     }
 }
-const  createArticleElement = ({Image, Title, Description}) =>
+const  createArticleElement = ({image, title, description}) =>
 {
     const articleContent = document.createElement('div');
     articleContent.classList.add('article-container')
@@ -35,7 +35,7 @@ const  createArticleElement = ({Image, Title, Description}) =>
     const articleDescription = document.createElement('p'); 
     articleDescription.textContent = Description;
     articleContent.appendChild(articleDescription);
-    
+
     return articleContent;
 }
 const renderData = (block,data) =>
@@ -59,7 +59,7 @@ const renderData = (block,data) =>
 export default async function decorate(block) {
 
         const currentPage=1;
-        const articlesPerPage=8;
+        const articlesPerPage=5;
         const link = block.querySelector('a');
         const path = link ? link.getAttribute('href') : block.textContent.trim();
         const articles=await fetchArticles(path,articlesPerPage,currentPage);
