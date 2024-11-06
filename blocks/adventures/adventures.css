@@ -21,7 +21,7 @@
   background-color: #fff !important;
   float: left !important;
   color: #000 !important;
-  height: 180px !important;
+/*  height: 180px !important;*/
   margin-top: -180px !important;
   min-height: 180px !important;
   padding-bottom: 0 !important;
@@ -29,6 +29,7 @@
   padding-right: 28px !important;
   position: relative !important;
   width: 71pc !important;   
+  max-width: 85%;
 }
 .adventures-banner .carousel-slide-content h2
 {
@@ -99,6 +100,7 @@
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .adventures-categories .active-category {
   background: #202020;
@@ -114,4 +116,37 @@
 {
   background: #202020;
   color:#fff;
+}
+@media (width>=1024px) and (width<=1175px)
+{
+  .adventures-outer article
+  {
+    width: 31%;
+  }
+}
+@media (width<1024px) and (width>=595px)
+{
+  .adventures-outer article
+  {
+    width: 47%;
+  }
+  .adventures-outer article .adventure-image-container img
+  {
+    max-height: 290px;    
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (width<595px)
+{
+  .adventures-outer article
+  {
+    width: 100%;
+  }
+  .adventures-outer article .adventure-image-container img
+  {  
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
 }

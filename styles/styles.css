@@ -356,11 +356,12 @@ main .section.highlight {
 }
 .home-carousel .carousel-slide-content
   {
-  margin: 92px 92px 0px 92px !important;
+    max-width: 90%;
+  margin: 0 auto !important;
   background-color: #fff !important;
   float: left !important;
   color: #000 !important;
-  height: 180px !important;
+/*  height: 180px !important; */
   margin-top: -180px !important;
   min-height: 180px !important;
   padding-bottom: 0 !important;
@@ -372,10 +373,6 @@ main .section.highlight {
 .home-carousel .carousel-slide-content h2
 {
   margin-top: 0px;
-}
-.home-carousel .carousel-slide-content
-{
-  margin: 0 auto !important;
 }
 .home-carousel .carousel-slide-indicators
 {
@@ -466,11 +463,12 @@ main .section.highlight {
 }
 .home-adventures-carousel .carousel-slide-content
   {
-  margin: 92px auto 0px auto !important;
+    max-width: 90%;
+  margin: 0 auto -1px auto !important;
   background-color: #fff !important;
   float: left !important;
   color: #000 !important;
-  height: 180px !important;
+/*  height: 180px !important; */
   margin-top: -180px !important;
   min-height: 180px !important;
   padding-bottom: 0 !important;
@@ -503,10 +501,6 @@ main .section.highlight {
 .home-adventures-carousel .carousel .carousel-navigation-buttons button::after
 {
   color: #000 !important;
-}
-.home-adventures-carousel .carousel-slide-content
-{
-  padding-bottom: 40px !important;
 }
 .home-recent-trips .default-content-wrapper
 {
@@ -560,7 +554,13 @@ main .section.highlight {
 {
   font-size: var(--body-font-size-xs);
 }
-
+@media (width<1024px)
+{
+  .faqs main
+  {
+    display: block
+  }
+}
 /***************  article details page      *******************/
 .article-details-content .columns-2-cols > div
 {

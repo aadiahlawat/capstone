@@ -40,7 +40,7 @@ header nav[aria-expanded='true'] {
 {
   header nav .nav-sections ul > li
   {
-    margin: 20px 0;
+    margin: 30px 0;
   }
 }
 @media (width >= 900px) {
@@ -339,6 +339,7 @@ header nav .nav-tools {
 {
   header nav .search-container
   {
-    max-width: 140px;
+    margin: 0 25px 00 0;
+    max-width: 160px;
   }
 }

@@ -50,6 +50,11 @@
     justify-content: space-between;
   text-align: center;
   border: none;
+  flex-wrap: wrap;
+}
+.our-contributors .contributors div
+{
+  min-width: 260px;
 }
 .our-contributors .contributors picture img
 {
@@ -79,7 +84,7 @@
 .our-contributors .contributors div h4
 {
   font-size: var(--body-font-size-xs);
-  color: var(--darkest-color);
+  color: var(--dim-color);
   font-family: var(--body-font-family);
   font-weight: var(--fontWeightBold);
   text-transform: var(--transformUppercase);

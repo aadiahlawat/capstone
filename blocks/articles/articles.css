@@ -42,6 +42,33 @@
 .magazine-featured-article img{
     height: 100%;
 }
+@media (width<1024px) and (width>=595px)
+{
+  .magazine-all-articles article
+  {
+    width: 47%;
+  }
+  .magazine-all-articles .articles-outer article .article-image-container img
+  {
+    max-height: 290px;    
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (width<595px)
+{
+  .magazine-all-articles article
+  {
+    width: 4100%;
+  }
+  .magazine-all-articles .articles-outer article .article-image-container img
+  {  
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
 .magazine-all-articles .articles-outer
 {
     display: flex;
