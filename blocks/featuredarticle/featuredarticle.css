@@ -1,0 +1,32 @@
+.featuredarticle.block > div
+{
+  display: flex;
+  background: var(--dim-color);
+}
+.featuredarticle.block .columns-img-col
+{
+    flex: 70%;
+}
+.featuredarticle.block .column-content:last-child
+{
+  padding: 3.5rem 2rem 2rem;
+  background-color: #ebebeb;
+  flex: 30%;
+}
+.featuredarticle.block .column-content:last-child p:nth-child(3)
+{
+  font-size: var(--body-font-size-xs);
+}
+.featuredarticle.block a{
+    
+  background-color: var(--brandPrimary) !important;
+  border-radius: var(--buttonBorderRadius) !important;
+  color: var(--darkest-color) !important;
+  font-size: var(--body-font-size-xs) !important;
+  font-weight: var(--fontWeightBold) !important;
+  padding: 1em 2.5em !important;
+  text-transform: var(--transformUppercase) !important;
+}
+.featuredarticle.block img{
+    height: 100%;
+}

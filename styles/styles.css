@@ -327,7 +327,7 @@ main .section.highlight {
 .home-adventures-carousel .carousel-slide-content a,  
 .home-featured-article a,
 .home-featured-article .column-content a,
-.home-recent-articles .default-content-wrapper .button-container a,
+/*.home-recent-articles .default-content-wrapper .button-container a,*/
 .home-recent-trips .button-container a
 {
   background-color: var(--brandPrimary) !important;

@@ -17,34 +17,25 @@ const fetchArticles = async (path,articlesPerPage,currentPage) => {
 }
 const  createArticleElement = ({Image, Title, Description}) =>
 {
-    const articleContent = document.createElement('article');
-
-    const articleImageContainer=document.createElement('div');
-    articleImageContainer.classList.add('article-image-container');
+    const articleContent = document.createElement('div');
+    articleContent.classList.add('article-container')
+    
     const articleImage = document.createElement('img'); // Create an img element
     articleImage.src = Image; // Set the image source 
     articleImage.alt = Title;
-
-    articleImageContainer.appendChild(articleImage);
-    articleContent.appendChild(articleImageContainer);
+    articleContent.appendChild(articleImage);
     
 
-    const articleTitleContainer=document.createElement('div');
-    articleTitleContainer.classList.add('article-title-container');
     const articleTitle = document.createElement('a'); // Create an a element
     articleTitle.href = `magazine/${Title.toLowerCase().replace(/\s+/g, '-')}`; 
     articleTitle.textContent = Title;
 
-    articleTitleContainer.appendChild(articleTitle);
-    articleContent.appendChild(articleTitleContainer);
+    articleContent.appendChild(articleTitle);
 
-    const articleDescriptionContainer=document.createElement('div');
-    articleDescriptionContainer.classList.add('article-description-container');
     const articleDescription = document.createElement('p'); 
     articleDescription.textContent = Description;
-
-    articleDescriptionContainer.appendChild(articleDescription);
-    articleContent.appendChild(articleDescriptionContainer);
+    articleContent.appendChild(articleDescription);
+    
     return articleContent;
 }
 const renderData = (block,data) =>
