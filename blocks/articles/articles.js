@@ -15,25 +15,25 @@ const fetchArticles = async (path,articlesPerPage,currentPage) => {
         return { data: [], total: 0 };
     }
 }
-const  createArticleElement = ({image, title, description}) =>
+const  createArticleElement = ({image, title, description,path}) =>
 {
     const articleContent = document.createElement('div');
     articleContent.classList.add('article-container')
     
     const articleImage = document.createElement('img'); // Create an img element
-    articleImage.src = Image; // Set the image source 
-    articleImage.alt = Title;
+    articleImage.src = image; // Set the image source 
+    articleImage.alt = title;
     articleContent.appendChild(articleImage);
     
 
     const articleTitle = document.createElement('a'); // Create an a element
-    articleTitle.href = `magazine/${Title.toLowerCase().replace(/\s+/g, '-')}`; 
-    articleTitle.textContent = Title;
+    articleTitle.href = path; 
+    articleTitle.textContent = title;
 
     articleContent.appendChild(articleTitle);
 
     const articleDescription = document.createElement('p'); 
-    articleDescription.textContent = Description;
+    articleDescription.textContent = description;
     articleContent.appendChild(articleDescription);
 
     return articleContent;
@@ -51,8 +51,6 @@ const renderData = (block,data) =>
 
     // optimize the images
     articleWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
-    
-    block.querySelector('div').style.display = 'none'; 
 
     block.append(articleWrapper);
 }
