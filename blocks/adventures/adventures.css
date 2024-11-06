@@ -67,16 +67,16 @@
     gap: 24px;
     flex-wrap: wrap;
 }
-.adventures-outer article
+.adventures-outer div
 {
   width: 260px;
 }
-.adventures-outer article .adventure-title-container a
+.adventures-outer div  a
 {
   color: var(--darkest-color);
   font-weight: var(--fontWeightBold);
 }
-.adventures-outer article .adventure-description-container p
+.adventures-outer div p
 {
   color: var(--dim-color);
   font-size: var(--body-font-size-xs);
@@ -85,7 +85,7 @@
   white-space: nowrap;
   text-transform: var(--transformUppercase);
 }
-.adventures-outer article .adventure-image-container img
+.adventures-outer div  img
 {
   width: 260px !important;
   max-width: 260px !important;
@@ -119,18 +119,18 @@
 }
 @media (width>=1024px) and (width<=1175px)
 {
-  .adventures-outer article
+  .adventures-outer div
   {
     width: 31%;
   }
 }
 @media (width<1024px) and (width>=595px)
 {
-  .adventures-outer article
+  .adventures-outer div
   {
     width: 47%;
   }
-  .adventures-outer article .adventure-image-container img
+  .adventures-outer div  img
   {
     max-height: 290px;    
     max-width: 100% !important;
@@ -139,11 +139,11 @@
 }
 @media (width<595px)
 {
-  .adventures-outer article
+  .adventures-outer div
   {
     width: 100%;
   }
-  .adventures-outer article .adventure-image-container img
+  .adventures-outer div  img
   {  
     max-width: 100% !important;
     width: 100% !important;

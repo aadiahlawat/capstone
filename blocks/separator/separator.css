@@ -1,0 +1,10 @@
+
+.separator
+{
+  clear: both;
+  border-style: solid;
+  border-width: 1px;
+  color: #ebebeb;
+  max-width: 1160px;
+  margin: 0 auto 30px auto !important;
+}

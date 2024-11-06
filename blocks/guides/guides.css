@@ -3,7 +3,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.capstone-guides  .guides div p:last-child
+.capstone-guides  .guides .cards-card-body p
 {
   background-color: #202020;
     width: 50%;
@@ -13,11 +13,11 @@
     padding: 8px 0 0 0;
     justify-content: space-around;
 }
-.capstone-guides  .guides div p:last-child a img
+.capstone-guides  .guides.block .cards-card-body p img
 {
   display: none;
 }
-.capstone-guides  .guides div p .icon
+.capstone-guides  .guides.block .cards-card-body p .icon
 {
   speak: none;
     -webkit-font-smoothing: antialiased;
@@ -31,27 +31,33 @@
     line-height: 1;
     text-transform: none;
 }
-.capstone-guides  .guides div p .icon.icon-facebook:before
+.capstone-guides  .guides.block .cards-card-body p .icon.icon-facebook:before
 {
   content: "";
 }
-.capstone-guides  .guides div p .icon.icon-twitter:before
+.capstone-guides  .guides.block .cards-card-body p .icon.icon-twitter:before
 {
   content: "";
 }
-.capstone-guides  .guides div p .icon.icon-instagram:before
+.capstone-guides  .guides.block .cards-card-body p .icon.icon-instagram:before
 {
   content: "";
 }
-.capstone-guides  .guides
+.capstone-guides .guides.block ul
 {
+  list-style: none;
     display: flex;
     gap:24px;
     justify-content: space-between;
   text-align: center;
   border: none;
+  flex-wrap: wrap;
 }
-.capstone-guides  .guides picture img
+.capstone-guides .guides.block li
+{
+  min-width: 260px;
+}
+.capstone-guides .guides.block .cards-card-image img
 {
   border-radius: 50%;
     height: 164px;
@@ -59,15 +65,15 @@
     object-fit: cover;
     width: 164px;
 }
-.capstone-guides h2:after
+.capstone-guides .guides.block h2:after
 {
-  border-bottom: 2px solid var(--brandPrimary);
+  border-bottom: 2px solid var(--brandPrimary,#ffea00);
   content: "";
   display: block;
   padding-top: 8px;
   width: 84px;
 }
-.capstone-guides h2
+.capstone-guides .guides.block .cards-card-body h2
  {
   margin-bottom: 30px;
 }
@@ -76,10 +82,10 @@
   font-size: var(--body-font-size-xs);
   color: var(--dim-color);
 }
-.capstone-guides div h4
+.capstone-guides .guides .cards-card-body h4
 {
   font-size: var(--body-font-size-xs);
-  color: var(--darkest-color);
+  color: var(--dim-color);
   font-family: var(--body-font-family);
   font-weight: var(--fontWeightBold);
   text-transform: var(--transformUppercase);
