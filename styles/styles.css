@@ -287,7 +287,8 @@ main .section.highlight {
 .home-carousel .default-content-wrapper h2:after,
 .home-adventures-carousel .default-content-wrapper h2:after,
 .home-recent-articles h2:after,
-.faqs-content h1:after
+.faqs-content h1:after,
+#members-only:after
  {
   border-bottom: 2px solid var(--brandPrimary);
   content: "";
