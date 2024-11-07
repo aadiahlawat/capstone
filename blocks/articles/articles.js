@@ -42,7 +42,6 @@ const renderData = (block,data) =>
 {  
     const articleWrapper = document.createElement('div',);
     articleWrapper.classList.add('articles-outer');
-    articleWrapper.setAttribute('data-totalArticles',data.total);
     
     data.data.forEach(article => {
         const articleContent=createArticleElement(article);
@@ -52,6 +51,7 @@ const renderData = (block,data) =>
     // optimize the images
     articleWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
 
+    block.textContent = '';
     block.append(articleWrapper);
 }
 export default async function decorate(block) {
@@ -61,6 +61,5 @@ export default async function decorate(block) {
         const link = block.querySelector('a');
         const path = link ? link.getAttribute('href') : block.textContent.trim();
         const articles=await fetchArticles(path,articlesPerPage,currentPage);
-        
         renderData(block,articles);
 }

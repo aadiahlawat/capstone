@@ -3,7 +3,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.our-contributors  .contributors div p:last-child
+.our-contributors  .contributors .cards-card-body p
 {
   background-color: #202020;
     width: 50%;
