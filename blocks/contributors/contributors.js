@@ -1,7 +1,20 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
+function createClassVariable()
+{
+  let count=0;
+    return function counter()
+    {
+      count++;
+      return count;
+    }
+}
+// Create the closure (increment function)
+const classVariable = createClassVariable();
+
 export default function decorate(block) {
   /* change to ul, li */
+  block.classList.add(`contributors-block-${classVariable()}`);
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');

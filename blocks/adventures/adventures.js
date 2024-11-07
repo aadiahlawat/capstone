@@ -6,8 +6,6 @@ const loadCategoriesTab = () =>
 const adventuresCategoriesList=document.querySelector(".adventures-categories ul");
 const adventuresContent=document.querySelector(".adventures-outer");
 const adventuresArticles = adventuresContent.querySelectorAll('div');
-
-
 const adventuresCategories=adventuresCategoriesList.querySelectorAll('li');
 adventuresCategories.forEach((category)=>
 {
@@ -42,10 +40,7 @@ function toggleAdventureByCategory(category) {
   }
 }
 }
-
-
 // fetch adventures form json
-
 const fetchadventures = async (path,adventuresPerPage,currentPage) => {
   try {
   const offset=(currentPage-1)*adventuresPerPage;
@@ -61,12 +56,9 @@ const fetchadventures = async (path,adventuresPerPage,currentPage) => {
   }
 }
 
-
-
 // render adventures
 const renderAdventures = ({Image,Title,Description,Category})=>
 {
-  
   const adventureContent = document.createElement('div');
   adventureContent.setAttribute('data-category','adventure-'+Category.toLowerCase().replace(/\s+/g, '-'));
 
@@ -89,8 +81,6 @@ const renderAdventures = ({Image,Title,Description,Category})=>
     adventureContent.appendChild(adventureDescription);
     return adventureContent
 }
-
-
 // render categories
 const renderCategories = (adventureCategoryName) =>
 {
@@ -99,12 +89,9 @@ const renderCategories = (adventureCategoryName) =>
   adventureCategoryContainer.textContent=adventureCategoryName;
   return adventureCategoryContainer;
 }
-
-
 //render output
 const  renderData = (block,data)  =>
 {  
-
   const adventureCategoriesContainer = document.createElement('div');
   adventureCategoriesContainer.classList.add('adventures-categories');
 
@@ -127,7 +114,6 @@ const  renderData = (block,data)  =>
   // append ul to the categories wrapper
   adventureCategoriesContainer.appendChild(adventureCategoriesList);
 
-
   const adventureWrapper = document.createElement('div');
   adventureWrapper.classList.add('adventures-outer')
   const totaladventures=data.total;
@@ -143,7 +129,6 @@ const  renderData = (block,data)  =>
   block.append(adventureCategoriesContainer);
   block.append(adventureWrapper);
 }
-
 
 export default async function decorate(block) {
       let currentPage=1;
