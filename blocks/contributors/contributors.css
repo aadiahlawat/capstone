@@ -1,9 +1,9 @@
-.our-contributors .contributors-wrapper
+.contributors-container .contributors-wrapper
 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.our-contributors  .contributors .cards-card-body p
+.contributors-container  .contributors .cards-card-body p
 {
   background-color: #202020;
     width: 50%;
@@ -13,11 +13,11 @@
     padding: 8px 0 0 0;
     justify-content: space-around;
 }
-.our-contributors  .contributors.block .cards-card-body p img
+.contributors-container  .contributors.block .cards-card-body p img
 {
   display: none;
 }
-.our-contributors  .contributors.block .cards-card-body p .icon
+.contributors-container  .contributors.block .cards-card-body p .icon
 {
   speak: none;
     -webkit-font-smoothing: antialiased;
@@ -31,19 +31,19 @@
     line-height: 1;
     text-transform: none;
 }
-.our-contributors  .contributors.block .cards-card-body p .icon.icon-facebook:before
+.contributors-container  .contributors.block .cards-card-body p .icon.icon-facebook:before
 {
   content: "";
 }
-.our-contributors  .contributors.block .cards-card-body p .icon.icon-twitter:before
+.contributors-container  .contributors.block .cards-card-body p .icon.icon-twitter:before
 {
   content: "";
 }
-.our-contributors  .contributors.block .cards-card-body p .icon.icon-instagram:before
+.contributors-container  .contributors.block .cards-card-body p .icon.icon-instagram:before
 {
   content: "";
 }
-.our-contributors .contributors.block ul
+.contributors-container .contributors.block ul
 {
   list-style: none;
     display: flex;
@@ -53,11 +53,11 @@
   border: none;
   flex-wrap: wrap;
 }
-.our-contributors .contributors.block li
+.contributors-container .contributors.block li
 {
   min-width: 260px;
 }
-.our-contributors .contributors.block .cards-card-image img
+.contributors-container .contributors.block .cards-card-image img
 {
   border-radius: 50%;
     height: 164px;
@@ -65,7 +65,7 @@
     object-fit: cover;
     width: 164px;
 }
-.our-contributors .contributors.block h2:after
+.contributors-container  h2:after
 {
   border-bottom: 2px solid var(--brandPrimary,#ffea00);
   content: "";
@@ -73,16 +73,16 @@
   padding-top: 8px;
   width: 84px;
 }
-.our-contributors .contributors.block  h2
+.contributors-container  h2
  {
   margin-bottom: 30px;
 }
-.our-contributors .default-content-wrapper p
+.contributors-container .default-content-wrapper p
 {
   font-size: var(--body-font-size-xs);
   color: var(--dim-color);
 }
-.our-contributors .contributors div h4
+.contributors-container .contributors div h4
 {
   font-size: var(--body-font-size-xs);
   color: var(--dim-color);
