@@ -6,11 +6,7 @@ const loadCategoriesTab = () =>
 const adventuresCategoriesList=document.querySelector(".adventures-categories ul");
 const adventuresContent=document.querySelector(".adventures-outer");
 const adventuresArticles = adventuresContent.querySelectorAll('div');
-const adventuresCategoriesFirst=adventuresCategoriesList.querySelector('li:first-child');
-if(adventuresCategoriesFirst)
-{
-  adventuresCategoriesFirst.classList.add('active-category');
-}
+
 
 const adventuresCategories=adventuresCategoriesList.querySelectorAll('li');
 adventuresCategories.forEach((category)=>
@@ -114,7 +110,7 @@ const  renderData = (block,data)  =>
 
   const adventureCategoriesList = document.createElement('ul');
 
-  const allCategoriesFilter='<li data-category="all" >All</li>';
+  const allCategoriesFilter='<li class="active-category" data-category="all" >All</li>';
   adventureCategoriesList.insertAdjacentHTML('afterbegin',allCategoriesFilter);
 
   let adventureCategoriesArray=new Set();
