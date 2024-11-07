@@ -111,7 +111,7 @@ footer .section:not(.footer-top-bar)
 }
 footer .footer-top-bar .button-container a
 {
-  background: transparent;
+  background: transparent !important;
 }
 @media (width >= 900px) {
   footer .footer > div {
