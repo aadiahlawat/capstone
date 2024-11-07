@@ -156,6 +156,5 @@ export default async function decorate(block) {
       const path = link ? link.getAttribute('href') : block.textContent.trim();
       const adventures=await fetchadventures(path,adventuresPerPage,currentPage);
       renderData(block,adventures);
-      const totaladventures=block.querySelector('.adventures-outer').getAttribute('data-totaladventures');
       loadCategoriesTab();
 }
