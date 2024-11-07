@@ -130,7 +130,6 @@ const  renderData = (block,data)  =>
   });
   // append ul to the categories wrapper
   adventureCategoriesContainer.appendChild(adventureCategoriesList);
-  block.append(adventureCategoriesContainer);
 
 
   const adventureWrapper = document.createElement('div');
@@ -144,6 +143,8 @@ const  renderData = (block,data)  =>
 
   });
   adventureWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  block.textContent = '';
+  block.append(adventureCategoriesContainer);
   block.append(adventureWrapper);
 }
 
