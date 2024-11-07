@@ -31,7 +31,7 @@ function toggleAdventureByCategory(category) {
   else
   {
     const toggleCategory=`adventure-${category}`;
-    adventuresArticles.forEach((article, i) => {
+    adventuresArticles.forEach((article) => {
       const articleCategory=article.getAttribute('data-category');
       if (articleCategory === toggleCategory) {
           article.style.display = 'block'; // Show the item
@@ -44,7 +44,7 @@ function toggleAdventureByCategory(category) {
 }
 
 
-// fetch adventures form adventures.json
+// fetch adventures form json
 
 const fetchadventures = async (path,adventuresPerPage,currentPage) => {
   try {
