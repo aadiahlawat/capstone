@@ -30,3 +30,11 @@
 .featuredarticle.block img{
     height: 100%;
 }
+
+@media (width<900px)
+{
+  .featuredarticle.block > div
+  {
+    display: block;
+  }
+}
